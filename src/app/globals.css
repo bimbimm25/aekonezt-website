@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* AEKONEZT Brand Colors */
+  --color-brand-navy: #1D2B3D;
+  --color-brand-gold: #B99150;
+  --color-brand-forest: #00683D;
+  --color-brand-leaf: #82BD3F;
+  --color-brand-white: #FAFAF7;
+  --color-brand-gray: #F1F2EF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-brand-white);
+    color: var(--color-brand-navy);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Kustomisasi warna seleksi teks agar sesuai dengan warna daun */
+  ::selection {
+    background-color: var(--color-brand-leaf);
+    color: #ffffff;
+  }
 }
