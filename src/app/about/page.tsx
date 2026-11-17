@@ -28,7 +28,7 @@ const values = [
 
 export default function AboutClient() {
     return (
-        <div className="pt-24 md:pt-32 pb-24 relative overflow-hidden">
+        <div className="pt-20 pb-24 relative overflow-hidden">
 
             {/* Ornamen Latar Belakang */}
             <div className="absolute top-0 right-0 w-125 h-125 bg-brand-leaf/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3" />

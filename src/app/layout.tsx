@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import ScrollToTop from "@/components/layouts/ScrollToTop";
 
 const jakarta = Plus_Jakarta_Sans({ 
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <body className={`${jakarta.className} min-h-screen flex flex-col`}>
+        <ScrollToTop />
         <Navbar />
         {/* Main content agar selalu mengisi sisa ruang antara header & footer */}
         <main className="grow pt-20 md:pt-24">
